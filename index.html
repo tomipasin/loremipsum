@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Gerador de Lorem ipsum</title>
+  </head>
+  <body class="bodie">
+
+    <div class="jumbotron cabeca">
+      <h1 class="display-4">Gerador de Lorem ipsum</h1>
+      <p class="lead">A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado na produção gráfica para preencher os espaços de texto em publicações (jornais, revistas, e sites) para testar e ajustar aspectos visuais (layout, tipografia, formatação, etc.) antes de utilizar conteúdo real.</p>
+     
+      
+    </div>
+    <hr class="my-4">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col textoP" >
+          <form id="formulario">
+            <div>
+              <input class="bd-example" id="amount" type="number" value="1" min="0" max="20" size="500" oninput="rangeInput.value=amount.value" />
+              <input class="botao btn btn-light" type="submit" value="Gerar Parágrafos">
+            </div>
+              <input id="rangeInput" type="range" class="custom-range" min="0" max="20" value="1" oninput="amount.value=rangeInput.value" />
+              </form>
+              
+        
+        </div>
+        <div class="col textoP2">
+
+          <form id="formulario2">
+            <div>
+              <input class="bd-example" id="amount" type="number" value="1" min="0" max="5000" size="5000" oninput="rangeInput2.value=amount.value" />
+              <input class="botao btn btn-light" type="submit" value="Gerar Palavras">
+            </div>
+              <input id="rangeInput2" type="range" class="custom-range" min="0" max="5000" value="1" oninput="amount.value=rangeInput2.value" />
+              </form>
+             
+             
+       
+        </form>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="container cabeca1">
+      <div class="paragrafosGerados"id="paraText"></div>
+      <div class="palavrasGeradas"></div>
+
+     
+        
+    </div>
+    
+
+
+   
+
+    
+
+    
+
+    <script src="./js/lorem.js"></script>
+  </body>
+</html>
